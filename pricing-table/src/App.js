@@ -1,11 +1,22 @@
 import "./App.css";
-import Pricing from "./PricingTable.js";
-
+import Free from "./Free.js";
+import Plus from "./Plus.js";
+import Pro from "./Pro.js";
 
 function App() {
+  const styles = {
+    display: "flex",
+    justifyContent: "space-evenly",
+    flexWrap: "wrap",
+    backgroundColor: "#007bff",
+  };
   return (
-    <div className="App">
-      <Pricing />
+    <div style={styles}>
+      <Free />
+      <Plus />
+      <Pro />
+      
+     
     </div>
   );
 }

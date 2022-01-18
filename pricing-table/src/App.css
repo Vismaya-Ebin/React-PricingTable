@@ -3,3 +3,27 @@ body{
      background-color: "blue",
 }
 
+
+ .month{
+     font-size: 0.8rem;
+     
+   }
+
+   .ulItems{
+       line-height: 41px !important;
+       list-style-type: none;
+      
+ }
+
+ .price{
+     font-size: 3rem;
+     text-align: center;
+   }
+
+   .mode{
+     padding-top:20px;
+     text-align: center;
+     font-weight:bold;
+     color:gray;
+     text-transform:uppercase;
+   }
