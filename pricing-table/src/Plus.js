@@ -1,6 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faCheck} from "@fortawesome/free-solid-svg-icons";
+
+
+
+
 export default function Plus() {
   const [over, onHover] = useState(false);
 
@@ -28,13 +35,13 @@ export default function Plus() {
   const innerDiv = {
     backgroundColor: "white",
     borderRadius: "15px",
-    width: "360px",
+    width: "400px",
     height: "580px",
     margin: "50px 0px",
   };
   const btnStyle = {
     borderRadius: "5rem",
-    margin: "5px 25px",
+    margin: "5px 35px",
     width: "320px",
     height: "50px",
     fontSize: "0.9rem",
@@ -64,14 +71,36 @@ export default function Plus() {
           </h6>
           <hr />
           <ul className="ulItems">
-            <li><strong>{data.user} </strong></li>
-            <li>{data.storage}</li>
-            <li>{data.projectsPublic}</li>
-            <li>{data.access}</li>
-            <li>{data.projectsPrivate}</li>
-            <li>{data.phoneSupport}</li>
-            <li>{data.domain}</li>
-            <li class="text-muted">{data.reports}</li>
+            <li> <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              <strong>{data.user} </strong></li>
+            <li><span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.storage}</li>
+            <li><span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.projectsPublic}</li>
+            <li><span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.access}</li>
+            <li>
+            <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>{data.projectsPrivate}</li>
+            <li><span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>{data.phoneSupport}</li>
+            <li><span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>{data.domain}</li>
+            <li class="text-muted"> 
+            <span> 
+           </span>
+              {data.reports}</li>
           </ul>
 
           <button style={btnStyle} type="button" class="btn btn-primary">

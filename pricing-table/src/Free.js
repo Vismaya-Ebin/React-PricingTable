@@ -1,5 +1,7 @@
 import { useState } from "react";
-import './App.css';
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Free() {
   const [over, onHover] = useState(false);
@@ -20,19 +22,17 @@ export default function Free() {
   ];
 
   const [initialPricingTable, updatedPriceTable] = useState(pricingTable);
-  
-  
-  
+
   const innerDiv = {
     backgroundColor: "white",
     borderRadius: "15px",
-    width: "360px",
+    width: "400px",
     height: "580px",
     margin: "50px 0px",
   };
   const btnStyle = {
     borderRadius: "5rem",
-    margin: "5px 25px",
+    margin: "5px 35px",
     width: "320px",
     height: "50px",
     fontSize: "0.9rem",
@@ -42,30 +42,47 @@ export default function Free() {
     opacity: "0.7",
     transition: "all 0.2s",
   };
-  
+
   if (over) {
     innerDiv.margin = "20px 0px";
   }
   return (
-    <div>
+    <div style={innerDiv}>
       {initialPricingTable.map((data) => (
         <div
-          style={innerDiv}
           onMouseOver={() => onHover(true)}
           onMouseOut={() => onHover(false)}
         >
-          <h5  className="mode">
-            {data.mode}
-          </h5>
+          <h5 className="mode">{data.mode}</h5>
           <h6 className="price">
             {data.price} <span className="month">/month</span>
           </h6>
           <hr />
           <ul className="ulItems">
-            <li> {data.user}  </li>
-            <li>{data.storage}</li>
-            <li>{data.projectsPublic}</li>
-            <li>{data.access}</li>
+            <li>
+              <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.user}{" "}
+            </li>
+            <li>
+              <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>{" "}
+              {data.storage}
+            </li>
+            <li>
+              <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.projectsPublic}
+            </li>
+            <li>
+              <span>
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
+              {data.access}
+            </li>
             <li class="text-muted">{data.projectsPrivate}</li>
             <li class="text-muted">{data.phoneSupport}</li>
             <li class="text-muted">{data.domain}</li>
