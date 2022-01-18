@@ -60,35 +60,34 @@ export default function Plus() {
           </h6>
           <hr />
           <ul className="ulItems">
-            <li> <span>
+            <li> <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               <strong>{data.user} </strong></li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.storage}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.projectsPublic}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.access}</li>
             <li>
-            <span>
+            <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.projectsPrivate}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.phoneSupport}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.domain}</li>
             <li class="text-muted"> 
-            <span> 
-           </span>
+            <span style={{marginRight: '0.7rem'}}><strong>X</strong> </span >
               {data.reports}</li>
           </ul>
 

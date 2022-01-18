@@ -55,31 +55,31 @@ export default function Pro() {
           </h6>
           <hr />
           <ul className="ulItems">
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span><strong>{data.user}</strong></li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.storage}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.projectsPublic}</li>
             <li>
-            <span>
+            <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.access}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.projectsPrivate}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.phoneSupport}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.domain}</li>
-            <li><span>
+            <li><span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{data.reports}</li>
           </ul>

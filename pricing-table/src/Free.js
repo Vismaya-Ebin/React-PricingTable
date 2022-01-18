@@ -49,33 +49,33 @@ export default function Free() {
           <hr />
           <ul className="ulItems">
             <li>
-              <span className="spanList">
+              <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.user}{" "}
             </li>
             <li>
-              <span>
+              <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>{" "}
               {data.storage}
             </li>
             <li>
-              <span>
+              <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.projectsPublic}
             </li>
             <li>
-              <span>
+              <span style={{marginRight: '0.7rem'}}>
                 <FontAwesomeIcon icon={faCheck} />
               </span>
               {data.access}
             </li>
-            <li class="text-muted">{data.projectsPrivate}</li>
-            <li class="text-muted">{data.phoneSupport}</li>
-            <li class="text-muted">{data.domain}</li>
-            <li class="text-muted">{data.reports}</li>
+            <li class="text-muted">   <span style={{marginRight: '0.7rem'}}><strong>X</strong> </span >{data.projectsPrivate}</li>
+            <li class="text-muted">   <span style={{marginRight: '0.7rem'}}><strong>X</strong> </span >{data.phoneSupport}</li>
+            <li class="text-muted">   <span style={{marginRight: '0.7rem'}}><strong>X</strong> </span >{data.domain}</li>
+            <li class="text-muted">   <span style={{marginRight: '0.7rem'}}><strong>X</strong> </span >{data.reports}</li>
           </ul>
 
           <button  type="button" className="btn btn-primary btnStyle">
