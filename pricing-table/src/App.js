@@ -7,6 +7,7 @@ function App() {
   const styles = {
     display: "flex",
     gap:"3rem",
+    justifyContent: "center",
     flexWrap: "wrap",
     backgroundColor: "#007bff",
    
