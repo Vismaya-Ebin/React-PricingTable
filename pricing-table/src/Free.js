@@ -29,6 +29,7 @@ export default function Free() {
     width: "400px",
     height: "580px",
     margin: "50px 0px",
+    justifyContent:"center"
   };
   
 

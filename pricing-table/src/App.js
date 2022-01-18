@@ -6,9 +6,10 @@ import Pro from "./Pro.js";
 function App() {
   const styles = {
     display: "flex",
-    justifyContent: "space-evenly",
+    gap:"3rem",
     flexWrap: "wrap",
     backgroundColor: "#007bff",
+   
   };
   return (
     <div style={styles}>
