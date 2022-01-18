@@ -39,18 +39,7 @@ export default function Plus() {
     height: "580px",
     margin: "50px 0px",
   };
-  const btnStyle = {
-    borderRadius: "5rem",
-    margin: "5px 35px",
-    width: "320px",
-    height: "50px",
-    fontSize: "0.9rem",
-    fontWeight: "bold",
-    letterSpacing: ".3rem",
-    padding: "1rem",
-    opacity: "0.7",
-    transition: "all 0.2s",
-  };
+ 
   
   if (over) {
     innerDiv.margin = "20px 0px";
@@ -103,7 +92,7 @@ export default function Plus() {
               {data.reports}</li>
           </ul>
 
-          <button style={btnStyle} type="button" class="btn btn-primary">
+          <button  type="button" class="btn btn-primary btnStyle">
             BUTTON
           </button>
         </div>
