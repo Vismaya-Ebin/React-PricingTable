@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 
+
 export default function Pricing() {
+  const [over, onHover] = useState(false);
+
   const pricingTable = [
     {
       mode: "free",
@@ -67,17 +70,27 @@ export default function Pricing() {
     margin: "50px 0px",
   };
   const btnStyle = {
-    borderRadius: "15px",
+    borderRadius: "5rem",
     margin: "25px",
     width: "320px",
     height: "50px",
     fontSize: "0.9rem",
     fontWeight: "bold",
+    letterSpacing: ".3rem",
+
+    padding: "1rem",
+    opacity: "0.7",
+    transition: "all 0.2s",
   };
+
   return (
     <div style={styles}>
       {initialPricingTable.map((data) => (
-        <div style={innerDiv}>
+        <div
+          style={innerDiv}
+          onMouseOver={() => onHover(true)}
+          onMouseOut={() => onHover(false)}
+        >
           <h5 class="card-title text-muted text-uppercase text-center m-4">
             {data.mode}
           </h5>
