@@ -40,7 +40,6 @@ export default function Pro() {
     fontSize: "0.9rem",
     fontWeight: "bold",
     letterSpacing: ".3rem",
-
     padding: "1rem",
     opacity: "0.7",
     transition: "all 0.2s",
